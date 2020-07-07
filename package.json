@@ -1,0 +1,62 @@
+{
+  "name": "seinjs-platform-demos",
+  "version": "0.8.0",
+  "main": "src/index.tsx",
+  "scripts": {
+    "adapter-watch": "cd webpack-platform-plugin && npm run dev",
+    "dev:my-tiny-program": "export SIENJS_PLATFORM=my-tiny-program;export NODE_ENV=development && npm run dev-main",
+    "dev:my-tiny-game": "export SIENJS_PLATFORM=my-tiny-game;export NODE_ENV=development && npm run dev-main",
+    "dev:wx-mini-program": "export SIENJS_PLATFORM=wx-mini-program;export NODE_ENV=development && npm run dev-main",
+    "dev:wx-mini-game": "export SIENJS_PLATFORM=wx-mini-game;export NODE_ENV=development && npm run dev-main",
+    "dev-main": "concurrently \"npm run adapter-watch\" \"webpack --watch --config ./webpack.config.js\"",
+    "adapter-build": "cd webpack-platform-plugin && npm run build",
+    "build:my-tiny-program": "export SIENJS_PLATFORM=my-tiny-program;export NODE_ENV=production && npm run build-main",
+    "build:my-tiny-game": "export SIENJS_PLATFORM=my-tiny-game;export NODE_ENV=production && npm run build-main",
+    "build:wx-mini-program": "export SIENJS_PLATFORM=wx-mini-program;export NODE_ENV=production && npm run build-main",
+    "build:wx-mini-game": "export SIENJS_PLATFORM=wx-mini-game;export NODE_ENV=production && npm run build-main",
+    "build-main": "npm run adapter-build && webpack -p --config ./webpack.config.js",
+    "dev-web": "node ./web/server.dev.js"
+  },
+  "authors": [
+    {
+      "name": "dtysky",
+      "email": "dtysky@outlook.com"
+    }
+  ],
+  "license": "MIT",
+  "engines": {
+    "install-node": "8"
+  },
+  "devDependencies": {
+    "@alipay/seinjs-alipay-cdn-publisher": "^0.8.9",
+    "@types/node": "^12.7.2",
+    "@types/react": "^16.9.2",
+    "awesome-typescript-loader": "^5.2.1",
+    "cannon-dtysky": "^0.6.4",
+    "clean-webpack-plugin": "^0.1.19",
+    "concurrently": "4.1.1",
+    "file-loader": "^4.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "raw-loader": "^3.1.0",
+    "seinjs": "^1.5.10",
+    "seinjs-atlas-loader": "^0.8.8",
+    "seinjs-audio": "^0.8.0",
+    "seinjs-camera-controls": "^0.8.2",
+    "seinjs-debug-tools": "^0.8.0",
+    "seinjs-dom-hud": "^0.8.0",
+    "seinjs-gltf-loader": "^0.9.27",
+    "seinjs-gpu-particle-system": "^0.8.10",
+    "seinjs-gui": "^0.8.11",
+    "seinjs-materials": "^0.1.6",
+    "seinjs-post-processing-system": "^0.8.0",
+    "seinjs-url-loader": "^0.8.4",
+    "tslint": "^4.1.1",
+    "tslint-loader": "^3.5.4",
+    "tslint-microsoft-contrib": "^4.0.0",
+    "typescript": "3.5.3",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.1"
+  }
+}

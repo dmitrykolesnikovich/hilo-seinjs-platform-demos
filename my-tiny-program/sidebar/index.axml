@@ -1,0 +1,30 @@
+<view class="demo-sidebar">
+  <view a:if="{{!show}}" onTap="onOpen" class="demo-sidebar-open">
+      <am-icon type="setting" style="width:56px;height:56px;" />
+  </view>
+  <popup show="{{show}}" disableScroll={{false}} animation="{{true}}" position="left" onClose="onClose">
+    <scroll-view style="height: 100vh;" scroll-y onScrollToLower="onScrollToLower">
+        <block a:for="{{config}}" a:for-item="config">
+          <list>
+              <view slot="header">
+                {{config.name}}
+              </view>
+              <block a:for="{{config.list}}" a:for-item="demo">
+                <list-item
+                  arrow="{{false}}"
+                  align="top"
+                  index="{{index}}"
+                  onClick="onSelect"
+                  key="items-{{index}}"
+                  last="{{index === (config.list.length - 1)}}"
+                  data-category="{{config.id}}"
+                  data-id="{{demo.id}}"
+                >
+                  {{demo.name}}
+                </list-item>
+              </block>
+            </list>
+        </block>
+    </scroll-view>
+  </popup>
+</view>

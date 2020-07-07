@@ -1,0 +1,14 @@
+<hud-container a:if="{{inited === true}}">
+  <hud-item
+    onGetGame="onGetGame"
+    onGetLinkedObject="onGetLinkedObject1"
+  >
+    <text class="hud" style="background:#f00;">Sphere</text>
+  </hud-item>
+  <hud-item
+    onGetGame="onGetGame"
+    onGetLinkedObject="onGetLinkedObject2"
+  >
+    <text class="hud" style="background:#00f;">Sphere2</text>
+  </hud-item>
+</hud-container>

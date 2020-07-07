@@ -1,0 +1,17 @@
+<view class="sein-container">
+  <canvas
+    disable-scroll
+    type="webgl"
+    id="canvas"
+    class="sein-canvas"
+    width="{{width*dpi}}"
+    height="{{height*dpi}}"
+    style="width:{{width}}px;height:{{height}}px;display:block;"
+    enableNative="{{enableNative}}"
+    onTouchStart="handleTouchStart"
+    onTouchEnd="handleTouchEnd"
+    onTouchMove="handleTouchMove"
+    onTouchCancel="handleTouchCancel"
+    onTap="handleClick"
+  />
+</view>

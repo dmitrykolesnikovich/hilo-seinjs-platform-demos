@@ -1,0 +1,3 @@
+<view class="seinjs-hud-container">
+    <slot></slot>
+</view>

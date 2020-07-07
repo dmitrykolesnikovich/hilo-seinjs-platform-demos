@@ -1,0 +1,7 @@
+<view
+  id="{{id}}"
+  class="seinjs-hud-item"
+  style="transform:translate({{x}}px, {{y}}px);zIndex:{{zIndex}};display:{{visible ? 'block' : 'none'}};"
+>
+  <slot></slot>
+</view>

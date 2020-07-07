@@ -1,0 +1,13 @@
+{
+  "enableModuleCompress": false,
+  "include": [
+    "**/sein-game/**/*.bin",
+    "**/sein-game/**/*.gltf",
+    "**/sein-game/**/*.glb",
+    "**/sein-game/**/*.atlas",
+    "**/sein-game/**/*.glsl",
+    "test.worker.js"
+  ],
+  "exclude": [
+  ]
+}

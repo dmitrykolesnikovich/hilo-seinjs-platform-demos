@@ -1,0 +1,12 @@
+[submodule "wx-mini-program-component"]
+	path = wx-mini-program-component
+	url = git@github.com:hiloteam/seinjs-wx-mini-program-component.git
+[submodule "tiny-program-component"]
+	path = tiny-program-component
+	url = git@github.com:hiloteam/seinjs-my-tiny-program-component.git
+[submodule "tiny-program-hud"]
+	path = tiny-program-hud
+	url = git@github.com:hiloteam/seinjs-tiny-program-hud.git
+[submodule "webpack-platform-plugin"]
+	path = webpack-platform-plugin
+	url = git@github.com:hiloteam/seinjs-webpack-platform-plugin.git

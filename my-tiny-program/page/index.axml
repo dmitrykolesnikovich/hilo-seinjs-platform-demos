@@ -1,0 +1,410 @@
+<view>
+    <seinjs onSeinCanvasCreated="onSeinCanvasCreated" />
+    <sidebar onSelect="onSelectDemo" current={{current}} />
+  <start-start
+      a:if="{{current === 'start-start'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <core-actor-component
+      a:if="{{current === 'core-actor-component'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <core-scene-component-compose
+      a:if="{{current === 'core-scene-component-compose'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <core-life-cycle
+      a:if="{{current === 'core-life-cycle'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <core-unlink-relink
+      a:if="{{current === 'core-unlink-relink'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <core-error-chain
+      a:if="{{current === 'core-error-chain'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <core-timer
+      a:if="{{current === 'core-timer'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <dispatch-single-level
+      a:if="{{current === 'dispatch-single-level'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <dispatch-multiple-level
+      a:if="{{current === 'dispatch-multiple-level'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <dispatch-multiple-world
+      a:if="{{current === 'dispatch-multiple-world'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <render-layers
+      a:if="{{current === 'render-layers'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <render-2d-sprite
+      a:if="{{current === 'render-2d-sprite'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <render-render-order
+      a:if="{{current === 'render-render-order'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <render-fog
+      a:if="{{current === 'render-fog'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <render-advance
+      a:if="{{current === 'render-advance'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <render-refraction
+      a:if="{{current === 'render-refraction'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <material-pbr-material
+      a:if="{{current === 'material-pbr-material'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <material-shader-material
+      a:if="{{current === 'material-shader-material'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <material-raw-shader-material
+      a:if="{{current === 'material-raw-shader-material'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <material-shader-chunk
+      a:if="{{current === 'material-shader-chunk'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <material-material-extension
+      a:if="{{current === 'material-material-extension'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <material-khr-technique-webgl
+      a:if="{{current === 'material-khr-technique-webgl'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <material-global-uniform-material
+      a:if="{{current === 'material-global-uniform-material'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <material-custom-semantic
+      a:if="{{current === 'material-custom-semantic'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <material-render-options
+      a:if="{{current === 'material-render-options'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <atlas-basic
+      a:if="{{current === 'atlas-basic'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <atlas-from-grid
+      a:if="{{current === 'atlas-from-grid'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <atlas-from-texture
+      a:if="{{current === 'atlas-from-texture'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <atlas-allocate-release
+      a:if="{{current === 'atlas-allocate-release'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <camera-perspective-camera
+      a:if="{{current === 'camera-perspective-camera'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <camera-orthographic-camera
+      a:if="{{current === 'camera-orthographic-camera'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <camera-actor-observe-control
+      a:if="{{current === 'camera-actor-observe-control'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <camera-camera-orbit-control
+      a:if="{{current === 'camera-camera-orbit-control'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <camera-camera-free-control
+      a:if="{{current === 'camera-camera-free-control'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <light-ambient-light
+      a:if="{{current === 'light-ambient-light'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <light-directional-light
+      a:if="{{current === 'light-directional-light'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <light-point-light
+      a:if="{{current === 'light-point-light'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <light-spot-light
+      a:if="{{current === 'light-spot-light'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <light-shadow
+      a:if="{{current === 'light-shadow'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <light-baking
+      a:if="{{current === 'light-baking'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <bsp-box
+      a:if="{{current === 'bsp-box'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <bsp-sphere
+      a:if="{{current === 'bsp-sphere'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <bsp-plane
+      a:if="{{current === 'bsp-plane'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <bsp-cylinder
+      a:if="{{current === 'bsp-cylinder'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <bsp-morph
+      a:if="{{current === 'bsp-morph'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <event-basic
+      a:if="{{current === 'event-basic'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <event-custom-trigger
+      a:if="{{current === 'event-custom-trigger'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <event-global
+      a:if="{{current === 'event-global'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <hid-touch
+      a:if="{{current === 'hid-touch'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <resource-image-loader
+      a:if="{{current === 'resource-image-loader'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <resource-texture-loader
+      a:if="{{current === 'resource-texture-loader'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <resource-cube-texture-loader
+      a:if="{{current === 'resource-cube-texture-loader'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <resource-atlas-loader
+      a:if="{{current === 'resource-atlas-loader'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <resource-gltf-loader
+      a:if="{{current === 'resource-gltf-loader'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <resource-free-load
+      a:if="{{current === 'resource-free-load'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <resource-glb-load
+      a:if="{{current === 'resource-glb-load'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <resource-cancel
+      a:if="{{current === 'resource-cancel'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <resource-gltf-morph
+      a:if="{{current === 'resource-gltf-morph'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <resource-gltf-skeletal
+      a:if="{{current === 'resource-gltf-skeletal'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <animation-2d-sprite
+      a:if="{{current === 'animation-2d-sprite'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <animation-model
+      a:if="{{current === 'animation-model'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <animation-tween
+      a:if="{{current === 'animation-tween'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <animation-custom
+      a:if="{{current === 'animation-custom'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <animation-events
+      a:if="{{current === 'animation-events'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <animation-combination
+      a:if="{{current === 'animation-combination'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <physic-base
+      a:if="{{current === 'physic-base'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <physic-collision-events
+      a:if="{{current === 'physic-collision-events'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <physic-pick
+      a:if="{{current === 'physic-pick'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <physic-disable
+      a:if="{{current === 'physic-disable'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <tiny-program-hud-basic
+      a:if="{{current === 'tiny-program-hud-basic'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <player-ai
+      a:if="{{current === 'player-ai'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <player-player
+      a:if="{{current === 'player-player'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <gpu-particle-system-edge-emitter
+      a:if="{{current === 'gpu-particle-system-edge-emitter'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <gpu-particle-system-atlas
+      a:if="{{current === 'gpu-particle-system-atlas'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <gpu-particle-system-wind-emitter
+      a:if="{{current === 'gpu-particle-system-wind-emitter'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <gpu-particle-system-sphere-emitter
+      a:if="{{current === 'gpu-particle-system-sphere-emitter'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <gpu-particle-system-hemispheric-emitter
+      a:if="{{current === 'gpu-particle-system-hemispheric-emitter'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <gpu-particle-system-custom-trajectory
+      a:if="{{current === 'gpu-particle-system-custom-trajectory'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <post-processing-system-threshold
+      a:if="{{current === 'post-processing-system-threshold'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <post-processing-system-local-threshold
+      a:if="{{current === 'post-processing-system-local-threshold'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  <post-processing-system-bloom
+      a:if="{{current === 'post-processing-system-bloom'}}"
+      onGameCreated="onGameCreated"
+      onGetCanvas="onGetCanvas"
+    />
+  </view>
+  

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents":{
+    "hud-container": "/hud/container/index",
+    "hud-item": "/hud/item/index"
+  }
+}

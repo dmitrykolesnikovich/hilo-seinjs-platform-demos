@@ -1,0 +1,11 @@
+{
+    "components": [
+        "popup",
+        "icon",
+        "cell",
+        "cell-group"
+    ],
+    "themes": {
+        "light": "white"
+    }
+}

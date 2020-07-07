@@ -1,0 +1,7 @@
+.hud {
+  width: 75px;
+  height: 35px;
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+}

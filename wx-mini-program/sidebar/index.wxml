@@ -1,0 +1,19 @@
+<view class="demo-sidebar" style="height: {{height}}px;top: {{top}}px">
+  <scroll-view style="height: {{height}}px;" scroll-y>
+      <block wx:for="{{config}}" wx:for-item="config">
+        <cell-group title="{{config.name}}">
+            <block wx:for="{{config.list}}" wx:for-item="demo">
+              <cell
+                align="top"
+                index="{{index}}"
+                bind:click="onSelect"
+                data-category="{{config.id}}"
+                data-id="{{demo.id}}"
+                title="{{demo.name}}"
+              >
+              </cell>
+            </block>
+          </cell-group>
+      </block>
+  </scroll-view>
+</view>

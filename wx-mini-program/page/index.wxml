@@ -1,0 +1,405 @@
+<view>
+    <seinjs bindSeinCanvasCreated="onSeinCanvasCreated" height="{{canvasHeight}}" />
+    <sidebar bindSelect="onSelectDemo" current="{{current}}" height="{{sidebarHeight}}" top="{{sidebarTop}}" />
+  <start-start
+      id="start-start"
+      wx:if="{{current === 'start-start'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <core-actor-component
+      id="core-actor-component"
+      wx:if="{{current === 'core-actor-component'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <core-scene-component-compose
+      id="core-scene-component-compose"
+      wx:if="{{current === 'core-scene-component-compose'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <core-life-cycle
+      id="core-life-cycle"
+      wx:if="{{current === 'core-life-cycle'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <core-unlink-relink
+      id="core-unlink-relink"
+      wx:if="{{current === 'core-unlink-relink'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <core-error-chain
+      id="core-error-chain"
+      wx:if="{{current === 'core-error-chain'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <core-timer
+      id="core-timer"
+      wx:if="{{current === 'core-timer'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <dispatch-single-level
+      id="dispatch-single-level"
+      wx:if="{{current === 'dispatch-single-level'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <dispatch-multiple-level
+      id="dispatch-multiple-level"
+      wx:if="{{current === 'dispatch-multiple-level'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <dispatch-multiple-world
+      id="dispatch-multiple-world"
+      wx:if="{{current === 'dispatch-multiple-world'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <render-layers
+      id="render-layers"
+      wx:if="{{current === 'render-layers'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <render-2d-sprite
+      id="render-2d-sprite"
+      wx:if="{{current === 'render-2d-sprite'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <render-render-order
+      id="render-render-order"
+      wx:if="{{current === 'render-render-order'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <render-fog
+      id="render-fog"
+      wx:if="{{current === 'render-fog'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <render-advance
+      id="render-advance"
+      wx:if="{{current === 'render-advance'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <render-refraction
+      id="render-refraction"
+      wx:if="{{current === 'render-refraction'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <material-pbr-material
+      id="material-pbr-material"
+      wx:if="{{current === 'material-pbr-material'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <material-shader-material
+      id="material-shader-material"
+      wx:if="{{current === 'material-shader-material'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <material-raw-shader-material
+      id="material-raw-shader-material"
+      wx:if="{{current === 'material-raw-shader-material'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <material-shader-chunk
+      id="material-shader-chunk"
+      wx:if="{{current === 'material-shader-chunk'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <material-material-extension
+      id="material-material-extension"
+      wx:if="{{current === 'material-material-extension'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <material-khr-technique-webgl
+      id="material-khr-technique-webgl"
+      wx:if="{{current === 'material-khr-technique-webgl'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <material-global-uniform-material
+      id="material-global-uniform-material"
+      wx:if="{{current === 'material-global-uniform-material'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <material-custom-semantic
+      id="material-custom-semantic"
+      wx:if="{{current === 'material-custom-semantic'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <material-render-options
+      id="material-render-options"
+      wx:if="{{current === 'material-render-options'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <atlas-basic
+      id="atlas-basic"
+      wx:if="{{current === 'atlas-basic'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <atlas-from-grid
+      id="atlas-from-grid"
+      wx:if="{{current === 'atlas-from-grid'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <atlas-from-texture
+      id="atlas-from-texture"
+      wx:if="{{current === 'atlas-from-texture'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <atlas-allocate-release
+      id="atlas-allocate-release"
+      wx:if="{{current === 'atlas-allocate-release'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <camera-perspective-camera
+      id="camera-perspective-camera"
+      wx:if="{{current === 'camera-perspective-camera'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <camera-orthographic-camera
+      id="camera-orthographic-camera"
+      wx:if="{{current === 'camera-orthographic-camera'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <camera-actor-observe-control
+      id="camera-actor-observe-control"
+      wx:if="{{current === 'camera-actor-observe-control'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <camera-camera-orbit-control
+      id="camera-camera-orbit-control"
+      wx:if="{{current === 'camera-camera-orbit-control'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <camera-camera-free-control
+      id="camera-camera-free-control"
+      wx:if="{{current === 'camera-camera-free-control'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <light-ambient-light
+      id="light-ambient-light"
+      wx:if="{{current === 'light-ambient-light'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <light-directional-light
+      id="light-directional-light"
+      wx:if="{{current === 'light-directional-light'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <light-point-light
+      id="light-point-light"
+      wx:if="{{current === 'light-point-light'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <light-spot-light
+      id="light-spot-light"
+      wx:if="{{current === 'light-spot-light'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <light-shadow
+      id="light-shadow"
+      wx:if="{{current === 'light-shadow'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <light-baking
+      id="light-baking"
+      wx:if="{{current === 'light-baking'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <bsp-box
+      id="bsp-box"
+      wx:if="{{current === 'bsp-box'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <bsp-sphere
+      id="bsp-sphere"
+      wx:if="{{current === 'bsp-sphere'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <bsp-plane
+      id="bsp-plane"
+      wx:if="{{current === 'bsp-plane'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <bsp-cylinder
+      id="bsp-cylinder"
+      wx:if="{{current === 'bsp-cylinder'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <bsp-morph
+      id="bsp-morph"
+      wx:if="{{current === 'bsp-morph'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <event-basic
+      id="event-basic"
+      wx:if="{{current === 'event-basic'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <event-custom-trigger
+      id="event-custom-trigger"
+      wx:if="{{current === 'event-custom-trigger'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <event-global
+      id="event-global"
+      wx:if="{{current === 'event-global'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <hid-touch
+      id="hid-touch"
+      wx:if="{{current === 'hid-touch'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <resource-image-loader
+      id="resource-image-loader"
+      wx:if="{{current === 'resource-image-loader'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <resource-texture-loader
+      id="resource-texture-loader"
+      wx:if="{{current === 'resource-texture-loader'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <resource-cube-texture-loader
+      id="resource-cube-texture-loader"
+      wx:if="{{current === 'resource-cube-texture-loader'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <resource-atlas-loader
+      id="resource-atlas-loader"
+      wx:if="{{current === 'resource-atlas-loader'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <resource-gltf-loader
+      id="resource-gltf-loader"
+      wx:if="{{current === 'resource-gltf-loader'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <resource-free-load
+      id="resource-free-load"
+      wx:if="{{current === 'resource-free-load'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <resource-glb-load
+      id="resource-glb-load"
+      wx:if="{{current === 'resource-glb-load'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <resource-cancel
+      id="resource-cancel"
+      wx:if="{{current === 'resource-cancel'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <resource-gltf-morph
+      id="resource-gltf-morph"
+      wx:if="{{current === 'resource-gltf-morph'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <resource-gltf-skeletal
+      id="resource-gltf-skeletal"
+      wx:if="{{current === 'resource-gltf-skeletal'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <animation-2d-sprite
+      id="animation-2d-sprite"
+      wx:if="{{current === 'animation-2d-sprite'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <animation-model
+      id="animation-model"
+      wx:if="{{current === 'animation-model'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <animation-tween
+      id="animation-tween"
+      wx:if="{{current === 'animation-tween'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <animation-custom
+      id="animation-custom"
+      wx:if="{{current === 'animation-custom'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <animation-events
+      id="animation-events"
+      wx:if="{{current === 'animation-events'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <animation-combination
+      id="animation-combination"
+      wx:if="{{current === 'animation-combination'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <physic-base
+      id="physic-base"
+      wx:if="{{current === 'physic-base'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <physic-collision-events
+      id="physic-collision-events"
+      wx:if="{{current === 'physic-collision-events'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <physic-pick
+      id="physic-pick"
+      wx:if="{{current === 'physic-pick'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <physic-disable
+      id="physic-disable"
+      wx:if="{{current === 'physic-disable'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <player-ai
+      id="player-ai"
+      wx:if="{{current === 'player-ai'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <player-player
+      id="player-player"
+      wx:if="{{current === 'player-player'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <gpu-particle-system-edge-emitter
+      id="gpu-particle-system-edge-emitter"
+      wx:if="{{current === 'gpu-particle-system-edge-emitter'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <gpu-particle-system-atlas
+      id="gpu-particle-system-atlas"
+      wx:if="{{current === 'gpu-particle-system-atlas'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <gpu-particle-system-wind-emitter
+      id="gpu-particle-system-wind-emitter"
+      wx:if="{{current === 'gpu-particle-system-wind-emitter'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <gpu-particle-system-sphere-emitter
+      id="gpu-particle-system-sphere-emitter"
+      wx:if="{{current === 'gpu-particle-system-sphere-emitter'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <gpu-particle-system-hemispheric-emitter
+      id="gpu-particle-system-hemispheric-emitter"
+      wx:if="{{current === 'gpu-particle-system-hemispheric-emitter'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <gpu-particle-system-custom-trajectory
+      id="gpu-particle-system-custom-trajectory"
+      wx:if="{{current === 'gpu-particle-system-custom-trajectory'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <post-processing-system-threshold
+      id="post-processing-system-threshold"
+      wx:if="{{current === 'post-processing-system-threshold'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <post-processing-system-local-threshold
+      id="post-processing-system-local-threshold"
+      wx:if="{{current === 'post-processing-system-local-threshold'}}"
+      bindGameCreated="onGameCreated"
+    />
+  <post-processing-system-bloom
+      id="post-processing-system-bloom"
+      wx:if="{{current === 'post-processing-system-bloom'}}"
+      bindGameCreated="onGameCreated"
+    />
+  </view>
+  

@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents":{
+    "cell-group": "/miniprogram_npm/wux-weapp/cell-group/index",
+    "cell": "/miniprogram_npm/wux-weapp/cell/index",
+    "popup": "/miniprogram_npm/wux-weapp/popup/index"
+  }
+}

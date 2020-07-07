@@ -1,0 +1,3 @@
+<view class="event-global">
+    <view>{{info}}</view>
+</view>

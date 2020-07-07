@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "sourceMap": true,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "lib": ["es2015", "dom"],
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "baseUrl": "./",
+    "paths": {
+      "seinjs-tiny-program-hud": ["./tiny-program-hud/src/index.ts"]
+    }
+  },
+  "include": [
+    "game/**/*.ts",
+    "tiny-program-hud/**/*.ts"
+  ]
+}

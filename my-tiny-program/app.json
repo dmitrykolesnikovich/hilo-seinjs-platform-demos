@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "page/index"
+  ],
+  "window": {
+    "enableWK": "YES",
+    "enableDSL": "YES",
+    "enableJSC": "YES",
+    "defaultTitle": "Sein.js",
+    "backgroundColor": "#F5F5F9",
+    "pullRefresh": false,
+    "allowsBounceVertical": true
+  },
+  "workers": ["amc.worker.js"]
+}

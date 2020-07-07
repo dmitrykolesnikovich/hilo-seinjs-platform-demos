@@ -1,0 +1,3 @@
+<view class="core-error-chain">
+  <view>{{info}}</view>
+</view>

@@ -1,0 +1,9 @@
+.hid-touch {
+  position: fixed;
+  right: 4px;
+  top: 4px;
+  width: 128px;
+  padding: 4px;
+  background: rgba(255, 255, 255, .6);
+  font-size: 14px;
+}

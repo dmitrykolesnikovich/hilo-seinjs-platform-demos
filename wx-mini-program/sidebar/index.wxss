@@ -1,0 +1,6 @@
+.demo-sidebar {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 100%;
+}

@@ -1,0 +1,3 @@
+<view class="physic-collision-events">
+    <view>{{info}}</view>
+</view>

@@ -1,0 +1,16 @@
+<view class="sein-container">
+  <canvas
+    disable-scroll
+    type="webgl"
+    id="sein-canvas"
+    width="{{width*dpi}}"
+    height="{{height*dpi}}"
+    style="width:{{width}}px;height:{{height}}px;top:{{top}}px;left:{{left}}px;display:block;"
+    bindtouchstart="handleTouchStart"
+    bindtouchend="handleTouchEnd"
+    bindtouchmove="handleTouchMove"
+    bindtouchcancel="handleTouchCancel"
+    bindlongtap="handleClick"
+    binderror="handleError"
+  />
+</view>

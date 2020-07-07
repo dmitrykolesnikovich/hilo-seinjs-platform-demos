@@ -1,0 +1,3 @@
+<view class="hid-touch">
+  <view>{{info}}</view>
+</view>

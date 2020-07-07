@@ -1,0 +1,3 @@
+<view class="event-custom-trigger">
+    <view>{{info}}</view>
+</view>

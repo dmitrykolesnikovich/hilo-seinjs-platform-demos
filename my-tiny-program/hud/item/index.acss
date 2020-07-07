@@ -1,0 +1,4 @@
+.seinjs-hud-item {
+  position: absolute;
+  pointer-events: all;
+}

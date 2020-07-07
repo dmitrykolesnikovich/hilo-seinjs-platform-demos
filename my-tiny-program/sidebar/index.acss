@@ -1,0 +1,13 @@
+.demo-sidebar {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 0;
+}
+
+.demo-sidebar-open {
+  position: absolute;
+  z-index: 10;
+  left: 4px;
+  top: 4px;
+}
