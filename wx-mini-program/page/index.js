@@ -41,8 +41,7 @@ Page({
     this.canvas = canvas;
     console.log('onSeinCanvasCreated');
 
-    // this.onSelectDemo({detail: {category: 'start', id: 'start'}});
-    this.onSelectDemo({detail: {category: 'atlas', id: 'basic'}});
+    this.onSelectDemo({detail: {category: 'start', id: 'start'}});
   },
   onSelectDemo({detail}) {
     const {category, id} = detail;
